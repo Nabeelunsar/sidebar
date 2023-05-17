@@ -9,8 +9,8 @@
 </template>
 <script>
 export default {
-    name: "Header",
-};
+    name: 'header1'
+}
 </script>
 <style scoped> .navbar {
      position: fixed;

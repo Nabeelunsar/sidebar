@@ -1,4 +1,3 @@
-import axios from 'axios';
 
 <template>
     <div class="section">
@@ -22,7 +21,7 @@ import axios from 'axios';
 </template>
 <script>
 export default{
-    name:"colums",
+    name:'bodymain',
     data(){
         return{
             codeInput:"",

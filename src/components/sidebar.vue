@@ -1,5 +1,4 @@
 
-import { togglesidebar } from './state';
 
 <template>
     <div :class="['sidebar', { expanded: isExpanded }]">
@@ -38,7 +37,7 @@ import { togglesidebar } from './state';
 </template>
 <script>
 export default {
-    name: "sidebar",
+    name: 'sidebar',
     data() {
         return {
             isExpanded: false,
