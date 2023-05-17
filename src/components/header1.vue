@@ -1,9 +1,9 @@
 <template>
     <div class="navbar">
-        <div class="logo">test <span>Hippo<i class="fa-solid fa-hippo"></i></span></div>
+        <div class="logo">Online<span>Shopping<i class="fa-solid fa-hippo"></i></span></div>
         <form action="#">
             <input type="search" class="search-data" placeholder="search">
-            <button type="submit" class="fas fa-search"></button>
+            <button type="submit" class="fas fa-search">Search</button>
         </form>
     </div>
 </template>
