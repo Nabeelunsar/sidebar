@@ -1,0 +1,180 @@
+
+import { togglesidebar } from './state';
+
+<template>
+    <div :class="['sidebar', { expanded: isExpanded }]">
+        <div class="logo-container">
+            <div class="imgText search-icon">
+                <i @click="toggleSidebar" class="fa-solid fa-magnifying-glass"></i>
+                <span v-if="isExpanded">
+                    <form action="#">
+                        <input type="search" class="search-data" placeholder="search">
+                    </form>
+                    >
+                </span>
+            </div>
+            <div class="imgText">
+                <i @click="toggleSidebar" :class="arrow" class="fa-solid fa-bars"></i>
+                <span v-if="isExpanded"></span>
+            </div>
+            <div class="imgText">
+                <i @click="toggleSidebar" class="fa-brands fa-whatsapp"></i>
+                <span v-if="isExpanded">whatsapp</span>
+            </div>
+            <div class="imgText">
+                <i @click="toggleSidebar" class="fa-brands fa-twitter"></i>
+                <span v-if="isExpanded">twitter</span>
+            </div>
+            <div class="imgText">
+                <i @click="toggleSidebar" class="fa-brands fa-instagram"></i>
+                <span v-if="isExpanded">instagram</span>
+            </div>
+            <div class="imgText">
+                <i @click="toggleSidebar" class="fa-brands fa-github"></i>
+                <span v-if="isExpanded">github</span>
+            </div>
+        </div>
+    </div>
+</template>
+<script>
+export default {
+    name: "sidebar",
+    data() {
+        return {
+            isExpanded: false,
+        };
+    },
+    methods: {
+        toggleSidebar() {
+            this.isExpanded = !this.isExpanded;
+        },
+    },
+};
+</script>
+<style scoped>
+.sidebar {
+    border-top-right-radius: 16px;
+    margin-top: 58px;
+    border-top: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-color: black;
+    padding: 10px;
+    color: beige;
+    transition: width 0.3s;
+    height: 100vh;
+}
+
+.imgText {
+    margin: 0 12px;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    display: none;
+}
+
+.fa-solid:hover {
+    color: orange;
+}
+
+.fa-whatsapp:hover {
+    color: orange;
+}
+
+.fa-twitter:hover {
+    color: orange;
+}
+
+.fa-instagram:hover {
+    color: orange;
+}
+
+.fa-github:hover {
+    color: orange;
+}
+
+.expanded {
+    width: 200px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+button {
+    display: block;
+
+    width: 100%;
+    padding: 5px;
+    margin-top:
+        10px;
+    justify-content: center;
+}
+
+.fa-bars {
+    font-size: 28px;
+    margin: 8px 0 20px 0;
+    cursor: pointer;
+    color: orangered;
+}
+
+.fa-brands {
+    font-size: 28px;
+    margin: 16px 0 20px 0;
+    cursor: pointer;
+}
+
+span {
+    margin-left: 12px;
+}
+
+form {
+    display: flex;
+    height: 34px;
+    background: black;
+    border-radius: 4px;
+    border: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+form .search-data {
+    height: 100%;
+    width: 180px;
+    padding: 0 10px;
+    color: white;
+    font-weight: 500;
+    background: none;
+    border: none;
+    font-size: 17px;
+    outline: none;
+}
+
+form button {
+    background: orange;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: white;
+    border-radius: 2px;
+    padding: 0 12px;
+}
+
+form button:hover {
+    background: orange;
+}
+
+@media only screen and (max-width:500px) {
+    .search-icon {
+        display: block;
+
+    }
+
+    .fa-solid {
+        font-size: 28px;
+        margin: 20px 0 20px 0;
+    }
+}</style>
