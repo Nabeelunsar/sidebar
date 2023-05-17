@@ -37,7 +37,7 @@
 </template>
 <script>
 export default {
-    name: 'sidebar',
+    name: 'SIDEBAR',
     data() {
         return {
             isExpanded: false,

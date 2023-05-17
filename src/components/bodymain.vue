@@ -21,7 +21,7 @@
 </template>
 <script>
 export default{
-    name:'bodymain',
+    name:'BODYMAIN',
     data(){
         return{
             codeInput:"",

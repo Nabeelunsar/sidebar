@@ -9,7 +9,7 @@
 </template>
 <script>
 export default {
-    name: 'header1'
+    name: 'HEADER1'
 }
 </script>
 <style scoped> .navbar {

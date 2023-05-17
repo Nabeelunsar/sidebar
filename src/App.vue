@@ -1,20 +1,27 @@
+
+
+
 <template>
-  <header1/>
-  <bodymain/>
-  <sidebar/>
+  <div class="main-page">
+    <header1 />
+    <div class="main">
+      <bodymain />
+      <sidebar />
+    </div>
+  </div>
 </template>
 
 <script>
-import header1 from './components/header.vue'
-import sidebar from './components/sidebar.vue'
-import bodymain from './components/header.vue'
+import header1 from './components/header1.vue';
+import sidebar from './components/sidebar.vue';
+import bodymain from './components/bodymain.vue';
 
 export default {
   name: 'App',
   components: {
     header1,
     sidebar,
-    bodymain
+    bodymain,
   }
 }
 </script>
