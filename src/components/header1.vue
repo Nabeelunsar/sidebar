@@ -12,7 +12,8 @@ export default {
     name: 'HEADER1'
 }
 </script>
-<style scoped> .navbar {
+<style scoped> 
+.navbar {
      position: fixed;
      width: 100%;
      display: flex;
@@ -34,6 +35,7 @@ export default {
      height: 34px;
      background: white;
      border-radius: 4px;
+     margin-right: 30px;
      border: 1px solid rgba(155 155 155 0.2);
  }
 

@@ -3,17 +3,17 @@
     <div class="section">
         <div class="column">
             <h2>Content</h2>
-            <p>This is a paragraph 1.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio itaque cumque facere adipisci dolorem repudiandae velit eos minus esse deleniti vitae tenetur reiciendis beatae tempora hic sunt, praesentium iure eaque.</p>
         </div>
         <div class="column">
             <h2>Instruction</h2>
-            <p>This is a paragrapg 2.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic error eaque, maxime id, deleniti, consequuntur necessitatibus et commodi nihil aliquid doloribus sapiente optio eius fugit iusto vel pariatur veritatis repellat.</p>
         </div>
         <div class="column">
-            <h2> Query</h2>
+            <h2> Code</h2>
             <div class="input-section">
                 <textarea v-model="codeInput" placeholder="Enter code..">
-                    </textarea>
+                        </textarea>
                 <button @click="submitCode">Submit</button>
             </div>
         </div>
@@ -39,20 +39,22 @@ export default {
 .section {
     display: flex;
     flex-wrap: wrap;
-    margin: auto auto;
+    /* margin: auto auto; */
+    padding-top: 65px;
 }
+
 
 .column {
     background-color: white;
     padding: 20px;
     margin: 10px;
     box-sizing: border-box;
-    border: 1px;
     text-align: center;
     height: 600px;
     width: 300px;
     border-radius: 12px;
-    width: cal(33.3% - 20px);
+    width: calc(33.3% - 20px);
+    border: 2px solid grey;
 }
 
 .column p {
@@ -95,9 +97,10 @@ button {
     display: block;
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: aqua;
+    background-color: gray;
     color: azure;
     border: none;
     cursor: pointer;
     border-radius: 4px;
-}</style>
+}
+</style>

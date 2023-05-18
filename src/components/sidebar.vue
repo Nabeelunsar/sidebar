@@ -9,7 +9,6 @@
                     <form action="#">
                         <input type="search" class="search-data" placeholder="search">
                     </form>
-                    >
                 </span>
             </div>
             <div class="imgText">
@@ -20,18 +19,12 @@
                 <i @click="toggleSidebar" class="fa-solid fa-house"></i>
                 <span v-if="isExpanded">DeshBoard</span>
             </div>
-            <div class="imgText">
-                <i @click="toggleSidebar" class="fa-light fa-wrench"></i>
-                <span v-if="isExpanded">Setting</span>
-            </div>
+            
             <div class="imgText">
                 <i @click="toggleSidebar" class="fa-brands fa-youtube"></i>
                 <span v-if="isExpanded">Youtube</span>
             </div>
-            <div class="imgText">
-                <i @click="toggleSidebar" class="fa-brands fa-github"></i>
-                <span v-if="isExpanded">github</span>
-            </div>
+           
         </div>
     </div>
 </template>
@@ -53,16 +46,19 @@ export default {
 <style scoped>
 .sidebar {
     border-top-right-radius: 16px;
-    margin-top: 58px;
+    /* margin-top: 58px; */
     border-top: 1px solid white;
     display: flex;
     flex-direction: column;
     align-items: left;
-    background-color:skyblue;
+    background-color: gray;
     padding: 10px;
     color: beige;
     transition: width 0.3s;
     height: 100vh;
+    width: 50px;
+    position:fixed;
+    top:65px;
 }
 
 .imgText {
@@ -83,17 +79,12 @@ export default {
     color: orange;
 }
 
-.fa-wrench:hover {
-    color: orange;
-}
 
 .fa-youtube:hover {
     color: orange;
 }
 
-.fa-github:hover {
-    color: orange;
-}
+
 
 .expanded {
     width: 200px;
