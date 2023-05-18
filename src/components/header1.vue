@@ -1,9 +1,9 @@
 <template>
     <div class="navbar">
-        <div class="logo">Online<span>Shopping<i class="fa-solid fa-hippo"></i></span></div>
+        <div class="logo">Online Shopping</div>
         <form action="#">
             <input type="search" class="search-data" placeholder="search">
-            <button type="submit" class="fas fa-search">Search</button>
+            <button type="submit">Search</button>
         </form>
     </div>
 </template>
@@ -50,10 +50,7 @@ export default {
      color: gray;
  }
 
- .fa-hippo {
-     color: orange;
- }
-
+ 
  .navbar form button {
      background: #ff3d00;
      border: none;

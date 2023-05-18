@@ -17,16 +17,16 @@
                 <span v-if="isExpanded"></span>
             </div>
             <div class="imgText">
-                <i @click="toggleSidebar" class="fa-brands fa-whatsapp"></i>
-                <span v-if="isExpanded">whatsapp</span>
+                <i @click="toggleSidebar" class="fa-solid fa-house"></i>
+                <span v-if="isExpanded">DeshBoard</span>
             </div>
             <div class="imgText">
-                <i @click="toggleSidebar" class="fa-brands fa-twitter"></i>
-                <span v-if="isExpanded">twitter</span>
+                <i @click="toggleSidebar" class="fa-light fa-wrench"></i>
+                <span v-if="isExpanded">Setting</span>
             </div>
             <div class="imgText">
-                <i @click="toggleSidebar" class="fa-brands fa-instagram"></i>
-                <span v-if="isExpanded">instagram</span>
+                <i @click="toggleSidebar" class="fa-brands fa-youtube"></i>
+                <span v-if="isExpanded">Youtube</span>
             </div>
             <div class="imgText">
                 <i @click="toggleSidebar" class="fa-brands fa-github"></i>
@@ -58,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: left;
-    background-color: black;
+    background-color:skyblue;
     padding: 10px;
     color: beige;
     transition: width 0.3s;
@@ -79,15 +79,15 @@ export default {
     color: orange;
 }
 
-.fa-whatsapp:hover {
+.fa-house:hover {
     color: orange;
 }
 
-.fa-twitter:hover {
+.fa-wrench:hover {
     color: orange;
 }
 
-.fa-instagram:hover {
+.fa-youtube:hover {
     color: orange;
 }
 
@@ -107,11 +107,9 @@ export default {
 
 button {
     display: block;
-
     width: 100%;
     padding: 5px;
-    margin-top:
-        10px;
+    margin-top: 10px;
     justify-content: center;
 }
 
@@ -176,4 +174,5 @@ form button:hover {
         font-size: 28px;
         margin: 20px 0 20px 0;
     }
-}</style>
+}
+</style>
